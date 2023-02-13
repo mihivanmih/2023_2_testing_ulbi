@@ -32,12 +32,14 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import AppRouter from './router/AppRouter'
+import Counter from './components/Counter/Counter'
 
 const App = () => {
     return (
         <div>
             <Navbar />
             <AppRouter />
+            <Counter/>
         </div>
     )
 }
