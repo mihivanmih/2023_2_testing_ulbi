@@ -6,6 +6,7 @@ import Users from '../users/Users'
 import UserDetaillsPage from '../pages/UserDetaillsPage'
 import ErrorPage from '../pages/ErrorPage'
 import HelloWorld from '../pages/HelloWorld'
+import UsersForTest from '../components/usersForTest/UsersForTest'
 
 const AppRouter = () => {
     return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
             <Route path={'/users'} element={<Users />}/>
             <Route path={'/users/:id'} element={<UserDetaillsPage />}/>
             <Route path={'/hello'} element={<HelloWorld />}/>
+            <Route path={'/users-test'} element={<UsersForTest />}/>
             <Route path={'/*'} element={<ErrorPage />}/>
         </Routes>
     )
